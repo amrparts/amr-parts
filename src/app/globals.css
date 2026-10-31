@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand: #1d5bd8;
+  --color-brand-dark: #1446b4;
+  --color-brand-soft: #eaf1ff;
+  --color-navy: #0a1630;
+  --color-navy-2: #0f2350;
+  --color-ink: #0f172a;
+  --color-muted: #64748b;
+  --color-line: #e3e8f0;
+  --color-soft: #f4f7fc;
+  --color-stock: #16a34a;
+  --color-whatsapp: #1fa855;
+  --color-whatsapp-dark: #178a45;
+  --color-popular: #e5484d;
+  --color-new: #e5484d;
+  --color-limited: #e5484d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  color: var(--color-ink);
+}
+
+/* Hide the native arrow on selects; we draw our own chevron */
+select {
+  appearance: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
